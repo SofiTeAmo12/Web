@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            position: relative;
+            max-width: 100%;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .feliz-cumpleaños h1 {
+            color: #ffffff;
+            background-color: #a146c9;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            text-align: center;
+        }
+        video {
+            width: 96.3%;
+            max-width: 600px;
+            margin: auto;
+            display: block;
+            border: 7px solid #A146C9;
+            border-radius: 20px;
+        }
+
+        .birthday-text {
+            font-size: 1.2em;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #a146c9;
+            display: block;
+            border-radius: 10px;
+            width: fit-content;
+            color: #ffffff;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0px;
+        }
+
+        .image-gallery img {
+            width: 96.3%;
+            max-width: 400px;
+            height: auto;
+            border: 7px solid #A146C9;
+            border-radius: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #A146C9;
+            color: #ffffff;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .birthday-text {
+                font-size: 1.5em;
+            }
+
+            .image-gallery {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .image-gallery img {
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+    <main>
+        <div class="feliz-cumpleaños">
+            <h1>Feliz Cumpleaños, Mi Amor</h1>
+        </div>
+        <video controls>
+            <source src="/imagenes/video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <div class="birthday-text">
+            <p>
+                Feliz cumpleaños, mi amada Sofi, espero que este día sea tan especial como tú lo eres para mí. <br> <br>
+                Sofi, este día no solo celebramos un año más de tu vida, sino también la fortuna de habernos reencontrado. El sábado 21 de diciembre, en el Jardín Botánico, nuestra historia encontró un nuevo comienzo. Fue allí, entre risas y explicaciones, donde decidí abrir mi corazón de nuevo. Cada beso en ese lugar tan mágico reafirmó lo que siempre supe: tú y yo estamos destinados a estar juntos. <br> <br>
+
+                Hoy, 23 de diciembre, quiero que sepas lo importante que eres para mí. Mi amor por ti ha sido más fuerte que cualquier dificultad del pasado. Tu nombre y tu alma están atados a los míos, y no hay nada que cambie eso. Esta página, estas fotos, este video… todo está hecho con el amor más grande que puedo darte, porque tú eres mi mundo, Sofi. <br> <br>
+
+                Espero que este regalo te haga recordar ese día tan especial y todo lo que hemos superado para estar aquí, juntos. Eres, y siempre serás, mi gran amor. <br> <br>
+
+                Con todo el cariño,  <br>
+                Tu Corazón de Melocotón 🖤
+            </p>
+            
+        </div>
+
+        <div class="image-gallery">
+            <img src="/imagenes/foto3.jpg" alt="Imagen 1">
+            <img src="/imagenes/foto1.jpg" alt="Imagen 2">
+            <img src="/imagenes/foto2.jpg" alt="Imagen 3">
+        </div>
+    </main>
+
+    <footer>
+        Te amo demasiado mi corazoncito de melón hermosa 🖤
+    </footer>
+</body>
+<script src="loadHeader.js"></script>
+</html>

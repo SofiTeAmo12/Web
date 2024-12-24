@@ -1,0 +1,19 @@
+header {
+    background-color: #a146c9;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+nav {
+    padding-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    background-color: #ffffff;
+    color: #a146c9;
+    border-radius: 20px;
+}

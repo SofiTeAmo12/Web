@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia</title>
+    <link rel="stylesheet" href="lineatiempo.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    <div class="timeline">
+        <div class="divh1">
+            <h1>RECUERDOS LINDOS</h1>
+            <p>Decidí incluir algunos recuerdos de nuestro lindo amor, verás que faltan muchos pero no tengo imagenes de todos, espero que te guste lo que hice para ti mi sofi hermosa. Te ama, Gabriel. </p>
+        </div>
+        <div id="collageModal" class="modal">
+            <div class="modal-content collage-content">
+                <span class="modal-close" onclick="closeCollageModal()">&times;</span>
+                <div class="collage">
+                    <img src="imagenes/img 15 sofi.jpg" alt="Foto 1">
+                    <img src="imagenes/img gafitas.jpg" alt="Foto 2">
+                    <img src="imagenes/img cara enojada.jpg" alt="Foto 3">
+                    <img src="imagenes/img desde arriba.jpg" alt="Foto 4">
+                    <img src="imagenes/img en pijama.jpg" alt="Foto 5">
+                    <img src="imagenes/img preciosa.jpg" alt="Foto 6">
+                    <img src="imagenes/img princesa.jpg" alt="Foto 7">
+                    <img src="imagenes/img real madrid.jpg" alt="Foto 8">
+                    <img src="imagenes/img sonrisa.jpg" alt="Foto 9">
+                </div>
+            </div>
+        </div>
+    <!-- Modal para el collage de 9 imágenes -->
+        <!-- Primer evento en la línea de tiempo -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h2>Primer recuerdo lindo juntos</h2>
+                <p>Abril 2021</p>
+                <img src="imagenes/sofi y yo en quebrada.png" alt="Primer encuentro" onclick="openModal(0)">
+                <p>Es la unica foto que tengo donde salimos juntos mi sofi. Este día fue maravilloso, recuerdo que nos divertimos mucho en esa quebrada y fue donde empezaron las primeras miradas jsjs</p>
+            </div>
+        </div>
+        <!-- Segundo evento en la línea de tiempo -->
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h2>Esta es la foto que me pediste que borrara</h2>
+                <p>Abril 2021</p>
+                <img src="imagenes/sofi en caballo.jpg" alt="caballo" onclick="openModal(1)">
+                <p>Para mi siempre fue una foto muy linda y tú no lo aceptaste, me pedias y me pedías que la borrara y como acto de mi terquedad pos jamás la borré</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h2>Notitas de Amor</h2>
+                <p>Diciembre 2022</p>
+                <img src="imagenes/collage notas.png" alt="Nuestras notitas" onclick="openModal(2)">
+                <p>Casi terminando el año nos instalamos noteit y fue lo mejor que pudimos hacer, tenemos demasidas notitas hermosas.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h2>Nuestras fotos de niños</h2>
+                <p>Enero 2023</p>
+                <img src="imagenes/collage niños.png" alt="niños" onclick="openModal(4)">
+                <p>Nuestras fotos de niños son de mis favoritas, porque me inspiran a luchar por ti y llegar a tener un hijo tan bello como tu de chiquita o como yo. </p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h2>El desfile de San Pedro</h2>
+                <p>Junio 2023</p>
+                <img src="imagenes/sofi desfile.jpg" alt="desfile" onclick="openModal(3)">
+                <p>Ese día te volví a ver y casi se me sale el corazón de la alegría, ver al amor de tu vida tan cerca tuyo es muy hermoso, pero triste fue verte y tener que ver como te ibas.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h2>El mejor mensaje de cumplaños de todos</h2>
+                <p>10 Julio 2024</p>
+                <img src="imagenes/mensaje cumpleaños.png" alt="mensaje" onclick="openModal(5)">
+                <p>Así como este mensaje me has enviado varios felicitandome y de verdad amo estos gestos tan lindos tuyos.</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h2>3 años de mucho amor, paciencia y perdón, los mejores 3 años de mi vida</h2>
+                <p>12 Julio 2024</p>
+                <img src="imagenes/mensaje aniversario 3.jpg" alt="mensaje" onclick="openModal(6)">
+                <p>Este mensaje es el mensaje más lindo que he recibido de ti mvd, recibir ese mensaje me hizo sentir que lo tenía todo y que era la persona más feliz del mundo por tenerte sofi.</p>
+            </div>
+        </div>
+        <div class="heart-button-container">
+            <p>Te hice un pequeño collage de mis fotos favoritas, quiero que veas lo hermosa que eres y la belleza que veo en ti mi cielito. <br>
+
+                <br>Presiona el corazoncito para ver lo más bello del mundo</p>
+            <button id="openCollageModal" class="heart-button">🖤</button>
+        </div>
+        <div class="parrafo-final">
+            <p>Esta es una pequeña carta que hice para ti mi sofi. <br>
+            <br>En todo este tiempo me has dado las mejores experiencias de mi vida sofi, y puede sonar muy tonto porque tuvimos una relación completamente a distancia, pero jamás había sentido un amor tan real como el tuyo sofi. <br>
+                Estoy inmensamente agradecido por ese amor tan lindo que me diste, por esos besitos inocentes que me diste con mucho amor y por todos los abrazos. Aún recuerdo con nostalgia cada momento que vivimos de forma presencial ya que por cosas de la vida no pudimos tener una relación tranquila y sana. <br>
+            <br> Con lagrimas en los ojos te digo que temo muchísimo que llegue el día en que el gusto que sientes por tu amigo de la infancia se convierta en algo más, si sabes a lo que me refiero. </p>
+            sabes muy bien que le temo a perderte, temo perder esa persona que estaba para mi todos los días, que se preocupaba por mi todos los días, que me decía "Te amo" todos los días, esa persona que hacia todo lo que a mi me encantaba recibir sin pedírselo o recordárselo, sofi era esa persona de en sueño que siempre tuve y que siento que estoy perdiendo. <br> <br>
+            Me duele el corazón cuando pasa el tiempo y no hablamos o no me buscas, cuando te envio un besito o un mensaje lindo y pasa desapercibido, me duele que hayas quitado algo tan especial como nuestro corazoncito, me duele que las cosas deban ser así y no como nosotros tanto habíamos soñado juntos, me duele que ahora tú te comportes así, porque eres muy injusta con mis sentimientos y no me amas como yo te amo. <br> <br> 
+            No me es posible dejarte así como así, estaría perdiendo al amor de mi vida. Quisiera que algún día me dieras un golpe de sinceridad o que dejaras de crear inseguridades y así poder confiar plenamente en todo lo que dices sin tener dudas. <br>
+            <br> Todo lo que te he dicho no es para que me respondas con tu punto de vista o para que me lleves la contraria y me quieras corregir, te he dicho todo eso para que sepas como me he sentido y porque quiero ser feliz contigo sofi, quisiera que las cosas fueran mutuas, es por eso que te comunico todo esto de esta forma sin que haya una discusión de por medio. 
+            <br><br>A pesar de todas estas cosas que nos afectan a ambos, quiero que sepas que para mi siempre tendrá más valor todo lo lindo que me haz dado, esa sofi que me demostraba su más puro amor siempre estará por encima de cualquier discusión o mal momento, es por eso que quiero luchar hasta el final por ti mi cielito, así me hagas daño con tus rechazos o malos tratos voy a estar para ti hasta que me digas que ya no me amas o que encontraste a alguien más, porque ese es el verdaderos amor, quien lucha hasta el final sin importar el daño que reciba es quien ama y merece ser amado sofi, solo espero que me puedas amara tanto como yo te amo mvd. <br><br>
+            Te amo como nunca antes te ha llegado a amar una persona sofi, ocupas todo mi corazón y mi vida eres tú mi cielo, espero que estas palabras no te hagan sentir mal, sino que te alegren el corazón y te hagan pensar un poco las cosas mvd <br><br>
+            Ya dije lo que quería y solo espero que la página te haya gustado mi sofi, dime que piensas de todo lo que hice para ti?
+            <br><br>¡TE AMO DEMASIDO MI CORAZONCITO DE MELÓN HERMOSA! 
+        </div>
+        <!-- Más eventos -->
+        <!-- Agrega más bloques de eventos en la línea de tiempo aquí -->
+        <div class="divsorpresa">
+            <h2  class="texto-palpito">Tengo un último regalo para ti mvd <br><br>
+            Estas flores amarillas jamás se marchitarán mvd.🌻
+            </h2>
+            <button class="sorpresa" onclick="window.location.href='rosas.html'">Abre Aquí</button>
+        </div>
+    </div>
+    <!-- Modal para mostrar las imágenes en tamaño completo -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Imagen de evento">
+            <p id="modalCaption"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="loadHeader.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container input[type="password"] {
+            padding: 10px;
+            width: calc(100% - 20px); /* Ajusta el ancho considerando el padding */
+            margin: 10px auto; /* Centra vertical y horizontalmente dentro del contenedor */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block; /* Asegura que el input ocupe toda la línea */
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #a146c9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8c3fb2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Hola sofi, ingresa la contraseña</h2>
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="checkPassword()">Entrar</button>
+        <p id="error-message" style="color: red; display: none;">Contraseña incorrecta</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "12072021") {
+                window.location.href = "inicio.html"; // Cambia por la URL de la siguiente página
+            } else {
+                document.getElementById("error-message").style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
